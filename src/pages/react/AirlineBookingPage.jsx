@@ -7,6 +7,63 @@ function AirlineBookingPage() {
         ✈️ Airline Booking Systems: GDS, Non-GDS, LCC, Non-LCC & IATA
       </h1>
 
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-3">Amadius</h2>
+
+        <p className="mb-2">
+          first of all we will hit master fare api in which all flight are shown
+        </p>
+        <p className="mb-2">
+          Then we hit Airsel api for perticular flight details, we also check
+          that the fare increase or not
+        </p>
+        <p className="mb-2">Then we hit Airseat map if we want to show seat</p>
+        <p className="mb-2">
+          then we hit multielement api in which send the passenger data
+        </p>
+        <p className="mb-2">
+          after that we hit the ticket creation api in which pnr is generated
+        </p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-3">TBO gds</h2>
+
+        <p className="mb-2">
+          first of all we will hit token api, which basically generate through
+          Ip address
+        </p>
+        <p className="mb-2">
+          then we hit flight search api to show all the flight available on that
+          day
+        </p>
+        <p className="mb-2">
+          after that we hit fare rule and fare quote api to show the rule and
+          check if the price has changed or not
+        </p>
+        <p className="mb-2">then we can hit ssr for seat meal and baggage</p>
+        <p className="mb-2">
+          then we check flight is lcc or non lcc and based on that if flight is
+          lcc then we generate ticket directly, and if it is gds or non lcc then
+          we will get the PNr
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-3">TBO hotel</h2>
+
+        <p className="mb-2">
+          first of all we will hit token api, which basically generate through
+          Ip address
+        </p>
+        <p className="mb-2">
+          then we hit hotel search api to show all the hotel available on that
+          day
+        </p>
+        <p className="mb-2">then we hit hotel info api as well as room api</p>
+        <p className="mb-2">then we hit the api to block the room</p>
+        <p className="mb-2">after that the last api is for book the hotel</p>
+      </section>
+
       {/* GDS */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-blue-600 mb-3">
