@@ -35,6 +35,9 @@ import SecondExtremePage from "./pages/jsquestion/SecondExtremePage";
 import SortAlgorithmsPage from "./pages/jsquestion/SortAlgorithmsPage";
 
 import WhatIsReactPage from "./pages/react/WhatIsReactPage";
+import React19Page from "./pages/react/React19Page";
+import NextJsPage from "./pages/react/NextJsPage";
+import PureComponentPage from "./pages/react/PureComponentPage";
 import VirtualDomVsDomPage from "./pages/react/VirtualDomVsDomPage";
 import ControlledVsUncontrolledPage from "./pages/react/ControlledVsUncontrolledPage";
 import MemoHooksPage from "./pages/react/MemoHooksPage";
@@ -48,6 +51,11 @@ import ReconciliationAndHOCPage from "./pages/react/ReconciliationAndHOCPage";
 import OptimizationPage from "./pages/react/OptimizationPage";
 import ClientVsServerPage from "./pages/react/ClientVsServerPage";
 import TodoPage from "./pages/reactQuestion/TodoPage";
+import CounterPage from "./pages/reactQuestion/CounterPage";
+import SearchFilterPage from "./pages/reactQuestion/SearchFilterPage";
+import SearchFilterApiPage from "./pages/reactQuestion/SearchFilterApiPage";
+import StopwatchPage from "./pages/reactQuestion/StopwatchPage";
+import AirlineBookingPage from "./pages/react/AirlineBookingPage";
 
 function App() {
   return (
@@ -92,7 +100,11 @@ function App() {
         <Route path="/sortings" element={<SortAlgorithmsPage />} />
         {/* react definition routes  */}
         <Route path="/reactexplain" element={<WhatIsReactPage />} />
+        <Route path="/airline-booking" element={<AirlineBookingPage />} />
+        <Route path="/react19" element={<React19Page />} />
+        <Route path="/nextjs" element={<NextJsPage />} />
         <Route path="/virtualdom" element={<VirtualDomVsDomPage />} />
+        <Route path="/purecomponent" element={<PureComponentPage />} />
         <Route
           path="/controlleduncontrolled"
           element={<ControlledVsUncontrolledPage />}
@@ -115,6 +127,10 @@ function App() {
         <Route path="/client-vs-server" element={<ClientVsServerPage />} />
         react question routes
         <Route path="/todo1" element={<TodoPage />} />
+        <Route path="/counter" element={<CounterPage />} />
+        <Route path="/searchfilter" element={<SearchFilterPage />} />
+        <Route path="/searchfilterapi" element={<SearchFilterApiPage />} />
+        <Route path="/stopwatch" element={<StopwatchPage />} />
       </Routes>
     </>
   );

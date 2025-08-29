@@ -18,10 +18,6 @@ const WhatIsReactPage = () => {
       </h2>
       <ul className="list-disc list-inside text-gray-700 space-y-2">
         <li>
-          🚀 <strong>Declarative:</strong> You describe what you want the UI to
-          look like, and React handles updating it efficiently.
-        </li>
-        <li>
           🧩 <strong>Component-Based:</strong> UI is built using reusable
           components which manage their own state.
         </li>

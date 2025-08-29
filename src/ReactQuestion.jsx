@@ -12,6 +12,35 @@ export default function ReactQuestion() {
             <span>add complete delete</span>
           </div>
         </Link>
+        <Link to="/counter">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">
+              {" "}
+              counter reducer
+            </h2>
+            <span>incre decre reset</span>
+          </div>
+        </Link>
+        <Link to="/searchfilter">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap"> Search filter</h2>
+            <span>search textbox filter</span>
+          </div>
+        </Link>
+        <Link to="/searchfilterapi">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">
+              api Search filter
+            </h2>
+            <span>search api filter</span>
+          </div>
+        </Link>
+        <Link to="/stopwatch">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">stop watch</h2>
+            <span>start stop reset</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

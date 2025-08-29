@@ -11,10 +11,32 @@ export default function HomePage() {
             <h2 className="text-xl font-semibold text-wrap">Explain react</h2>
           </div>
         </Link>
+        <Link to="/airline-booking">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">GDS No GDs IATA</h2>
+          </div>
+        </Link>
+        <Link to="/react19">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">React 19 ⚡ </h2>
+          </div>
+        </Link>
+        <Link to="/nextjs">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">Next JS ⚡ </h2>
+          </div>
+        </Link>
         <Link to="/client-vs-server">
           <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
             <h2 className="text-[18px] font-semibold text-wrap">
               client vs server
+            </h2>
+          </div>
+        </Link>
+        <Link to="/purecomponent">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-[18px] font-semibold text-wrap">
+              pure component
             </h2>
           </div>
         </Link>
