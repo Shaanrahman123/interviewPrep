@@ -6,6 +6,20 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-100 p-6">
       <h1 className="text-3xl font-bold mb-6">JavaScript Concepts</h1>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <Link to="/global-execution-context">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">
+              global execution context
+            </h2>
+          </div>
+        </Link>
+        <Link to="/memory-cache">
+          <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
+            <h2 className="text-xl font-semibold text-wrap">
+              heap, stack memory,cache
+            </h2>
+          </div>
+        </Link>
         <Link to="/closure">
           <div className="bg-white rounded-lg shadow-md p-2 hover:shadow-xl transition-shadow cursor-pointer">
             <h2 className="text-xl font-semibold text-wrap">Closure</h2>

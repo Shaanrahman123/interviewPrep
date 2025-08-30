@@ -56,6 +56,8 @@ import SearchFilterPage from "./pages/reactQuestion/SearchFilterPage";
 import SearchFilterApiPage from "./pages/reactQuestion/SearchFilterApiPage";
 import StopwatchPage from "./pages/reactQuestion/StopwatchPage";
 import AirlineBookingPage from "./pages/react/AirlineBookingPage";
+import GlobalExecutionContextPage from "./pages/GlobalExecutionContentPage";
+import MemoryAndCachePage from "./pages/MemoryAndCachePage";
 
 function App() {
   return (
@@ -81,6 +83,11 @@ function App() {
         <Route path="/oops" element={<OOPsPage />} />
         <Route path="/thiskeyword" element={<ThisKeywordPage />} />
         <Route path="/shallowdeep" element={<CopyConceptPage />} />
+        <Route
+          path="/global-execution-context"
+          element={<GlobalExecutionContextPage />}
+        />
+        <Route path="/memory-cache" element={<MemoryAndCachePage />} />
         <Route
           path="/spread-rest-destructuring"
           element={<SpreadRestDestructuring />}

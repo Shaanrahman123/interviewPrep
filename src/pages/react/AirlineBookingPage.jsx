@@ -8,23 +8,40 @@ function AirlineBookingPage() {
       </h1>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-blue-600 mb-3">Amadius</h2>
+        <h2 className="text-2xl font-semibold text-blue-600 mb-3">
+          Amadeus Flight Booking Flow
+        </h2>
 
         <p className="mb-2">
-          first of all we will hit master fare api in which all flight are shown
+          1. **Master Fare Search (Flight Offers Search API):** First, we call
+          the Flight Offers Search API to get available flights and fares.
         </p>
+
         <p className="mb-2">
-          Then we hit Airsel api for perticular flight details, we also check
-          that the fare increase or not
+          2. **Flight Offer Pricing (Revalidation of Fare):** Next, we call the
+          Flight Offer Pricing API for a particular flight to confirm fare
+          accuracy and check if the price has increased or changed.
         </p>
-        <p className="mb-2">Then we hit Airseat map if we want to show seat</p>
+
         <p className="mb-2">
-          then we hit multielement api in which send the passenger data
+          3. **Seat Map Retrieval (Optional):** If the customer wants to choose
+          seats, we call the Seat Map Display API to get available seat layouts
+          and prices.
         </p>
+
         <p className="mb-2">
-          after that we hit the ticket creation api in which pnr is generated
+          4. **Passenger Details Submission (Multi-elements API / Create PNR):**
+          Then we create a Passenger Name Record (PNR) by sending passenger
+          details (name, DOB, contact info, documents, etc.).
+        </p>
+
+        <p className="mb-2">
+          5. **Ticketing (Issue Ticket API):** Finally, we issue the ticket by
+          calling the Ticketing API. This generates the confirmed PNR and
+          e-ticket number.
         </p>
       </section>
+
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-blue-600 mb-3">TBO gds</h2>
 
@@ -61,6 +78,30 @@ function AirlineBookingPage() {
         </p>
         <p className="mb-2">then we hit hotel info api as well as room api</p>
         <p className="mb-2">then we hit the api to block the room</p>
+        <p className="mb-2">after that the last api is for book the hotel</p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-3">
+          Galilio (travelport) Api Integration
+        </h2>
+
+        <p className="mb-2">
+          first of all we are hitting the flight result api based on user
+          search,
+        </p>
+        <p className="mb-2">
+          then the search result came, and if we click on any flight then we
+          will hit price api to chck the price increase or not,
+        </p>
+        <p className="mb-2">
+          then there is two more api for initial workbench (Creates a session.
+          Returns a workbench ID for all subsequent actions. for booking) and
+          add offer
+        </p>
+        <p className="mb-2">
+          after that we will hit the passenger details api where we are hitting
+          the api passenger no of times...
+        </p>
         <p className="mb-2">after that the last api is for book the hotel</p>
       </section>
 
